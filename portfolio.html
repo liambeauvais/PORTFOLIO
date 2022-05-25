@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/assets/styles.css">
+    <title>Mon portfolio</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>Liam BEAUVAIS</h1>
+            <p>
+                J'ai découvert le monde du développement Web en Avril 2021 grâce au
+                fabuleux site d'OpenClassrooms. Actuellement étudiant en BTS Services
+                aux Organisations option SLAM depuis Août 2022, voici une modeste
+                présentation de ce que j'ai accompli cette année...
+            </p>
+        </header>
+        <section class="tab">
+            <div class="button-container">
+                <button class="tablinks" onclick="openTab(event, 'formation')" id="defaultOpen">
+                    <img src="src/assets/logoTab/bookTab.png" alt="FORMATION">
+                </button>
+            </div>
+            <div class="button-container">
+                <button class="tablinks" onclick="openTab(event, 'cyber')"><img src="src/assets/logoTab/hackerTab.png"
+                        alt="CYBER"></button>
+            </div>
+            <div class="button-container">
+                <button class="tablinks" onclick="openTab(event, 'stage')">
+                    <img src="src/assets/logoTab/LogoBoutrai.PNG" alt="STAGE">
+                </button>
+            </div>
+            <div class="button-container">
+                <button class="tablinks" onclick="openTab(event, 'pourmonclub')"><img
+                        src="src/assets/logoTab/pingpongTab.jpg" alt="PourMonClub"></button>
+            </div>
+            <div class="button-container">
+                <button class="tablinks" onclick="openTab(event, 'algoritmie')"><img
+                        src="src/assets/logoTab/algoIcon.jpg" alt="ALGORITMIE"></button>
+            </div>
+            <div class="button-container">
+                <button class="tablinks" onclick="openTab(event, 'veille')"><img src="src/assets/logoTab/veilleTab.jpg"
+                        alt="VEILLE"></button>
+            </div>
+            <div class="button-container">
+                <button class="tablinks" onclick="openTab(event, 'apres')"
+                    style="background-color: blue;">APRES?</button>
+            </div>
+        </section>
+
+        <!-- ONGLET FORMATION-->
+        <section class="tabcontent" id="formation">
+            <h2>AU COURS DE L'ANNÉE...</h2>
+            <div>
+                <div class="formation-content"><img class="formation-img" src="src/assets/logoCours/sqlIcon.jpg"
+                        alt="coucou">
+                    <h3>SQL</h3>
+                    <div class="formation-inside-content">
+                        <ol>
+                            <p>Syntaxe du langage</p>
+                            <p>Workbench</p>
+                            <p>Modélisation Merise</p>
+                        </ol>
+                    </div>
+                </div>
+                <div class="formation-content"><img class="formation-img" src="src/assets/logoCours/devWebLogo.png"
+                        alt="coucou">
+                    <h3>Web</h3>
+                    <div class="formation-inside-content">
+                        <ol>
+                            <p>PHP/HTML/CSS</p>
+                            <p>WordPress</p>
+                            <p>GIT</p>
+                            <p>Gestion de projet</p>
+                        </ol>
+                    </div>
+
+
+                </div>
+                <div class="formation-content"><img class="formation-img" src="src/assets/logoCours/javaLogo.png"
+                        alt="coucou">
+                    <h3>Java</h3>
+                    <div class="formation-inside-content">
+                        <ol>
+                            <p>Syntaxe du langage</p>
+                            <p>Orienté objet</p>
+                            <p>Héritage/Interfaces</p>
+                            <p>Swing</p>
+                        </ol>
+                    </div>
+
+                </div>
+                <div class="formation-content"><img class="formation-img" src="src/assets/logoCours/IconResau.png"
+                        alt="coucou">
+                    <h3>Réseau</h3>
+                    <div class="formation-inside-content">
+                        <ol>
+                            <p style="display: flex; align-items: center;"><img src="src/assets/logoCours/aws-logo.png"
+                                    alt="AWS" style="width: 50px; height:50px; margin-right: 50px;"><img
+                                    src="src/assets/logoCours/netexplorer.jpg" alt="NET EXPLORER"
+                                    style="width: 150px; height:50px; margin-right: 20px;"><span>Configuration de
+                                    cloud</span></p>
+                            <p>Installation et configuration d'une VM</p>
+                        </ol>
+                    </div>
+
+                </div>
+                <div class="formation-content"><img class="formation-img" src="src/assets/logoCours/algoContentIcon.jpg"
+                        alt="coucou">
+                    <h3>Algorithmique</h3>
+                    <div class="formation-inside-content">
+                        <ol>
+                            <p>Algorithme de Collatz</p>
+                            <p>Matrices Python</p>
+                            <p>ROT 13</p>
+                            <p>Calculs PGCD</p>
+                            <p>Binaire/Hexa</p>
+                        </ol>
+                    </div>
+
+                </div>
+                <div class="formation-content"><img class="formation-img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Blason_Pouzy-M%C3%A9sangy.svg"
+                        alt="coucou">
+                    <h3>PPE</h3>
+                    <div class="formation-inside-content">
+                        <ol>
+                            <p style="display: flex; align-items: center;"><span>Utilisation de
+                                </span><img class="" src="src/assets/logoCours/aws-logo.png" alt="AWS"
+                                    style="width: 50px; height:50px; margin-left: 10px;"></p>
+                            <p>Analyse du cahier des charges d'un service à produire</p>
+                            <p>Évaluation des risques liés à l'utilisation d'un service</p>
+                            <p>Communiquer avec des BDD en JAVA (JDBC)</p>
+                            <p>Communiquer avec des BDD en PHP (PDO)</p>
+                        </ol>
+                        <img src="src/assets/formationIMG/projet Web.png" width="100%" alt="projet web">
+                        <img src="src/assets/formationIMG/projet lourd.png" width="100%" alt="projet lourd">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FIN ONGLET FORMATION-->
+
+        <!-- ONGLET CYBER -->
+
+        <section class="tabcontent" id="cyber" style="display: none">
+            <div class="cyber-content">
+                <h2>ROOT ME</h2>
+                <img src="src/assets/cyber/rootme.png" width="80%" alt="" style="margin-left: 10%;">
+            </div>
+
+            <div class="cyber-content">
+                <h2>CRYPTOHACK</h2>
+                <img src="src/assets/cyber/cryptohack.png" width="60%" alt="" style="margin-left: 20%;">
+            </div>
+
+            <div class="cyber-content">
+                <h2>CTF</h2>
+                <div style="display: flex; justify-content: space-around; align-items: center;">
+                    <span
+                        style="width: 30%; display: flex; align-items: center; justify-content: center; font-weight: bolder;"><img
+                            src="src/assets/cyber/cafe CTF.png" alt="" width="50px" style="margin-right: 10px;"> CTF
+                        Cafe</span>
+                    <span
+                        style="width: 30%; display: flex; align-items: center; justify-content: center; font-weight: bolder;"><img
+                            src="src/assets/cyber/midnightFlag.jpg" alt="" width="50px" style="margin-right: 10px;">
+                        Midnight Flag CTF</span>
+                    <span
+                        style="width: 30%; display: flex; align-items: center; justify-content: center; font-weight: bolder;"><img
+                            src="src/assets/cyber/patriotCtf.png" alt="" width="150px" style="margin-right: 10px;">
+                        Patriot CTF 2022</span>
+                </div>
+                <div class="stage-content--img">
+                    <img src="src/assets/cyber/message.png" alt="">
+                    <img src="src/assets/cyber/cipher.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- FIN ONGLET CYBER -->
+
+        <!-- ONGLET STAGE -->
+        <section class="tabcontent" id="stage" style="display: none">
+            <p style="width: 60%; text-align:center; font-weight:bold;margin-left: 20%; font-size: larger;">J'ai pu participer à un projet d'application IntraNet grâce à la Famille Boutrais, en utilisant Vue.js/HTML/CSS/bootstrapVue à mon premier stage en novembre/décembre 2021, puis anaconda comme environnement, Django pour le back-end et Vue.js/HTML/CSS/BoostrapVue pour le front-end à mon deuxième stage en février/mars 2022</p>
+            <div class="stage-content refonte">
+                <h2>REFONTE GRAPHIQUE</h2>
+                <div class=stage-content--img>
+                    <img src="src/assets/stages/refonte/refonte.PNG" width="45%" alt="refonte">
+                    <img src="src/assets/stages/refonte/RoadMap.PNG" width="45%" alt="roadmap">
+                    <img src="src/assets/stages/refonte/RoadMapResponsive.PNG" width="45%" alt="responsive">
+                    <img src="src/assets/stages/refonte/ShellPurchase.PNG" width="45%" alt="shellpurchase">
+                </div>
+            </div>
+            <hr>
+
+            <div class="stage-content barcode">
+                <h2> BARCODE </h2>
+                <div class="stage-content--img">
+                    <img src="src/assets/stages/refonte/scanner/barcode.PNG" width="45%" alt="barcode">
+                    <img src="src/assets/stages/refonte/scanner/Scanner1.PNG" width="45%" alt="scanner1">
+                    <img src="src/assets/stages/refonte/scanner/Scanner2.PNG" width="45%" alt="scanner2">
+                </div>
+            </div>
+            <hr>
+
+            <div class="stage-content features">
+                <h2>FEATURES</h2>
+
+                <h3>EXPORT</h3>
+                <div class="stage-content--img">
+                    <img src="src/assets/stages/features/export/button-ouvert.PNG" width="45%" alt="button-ouvert">
+                    <img src="src/assets/stages/features/export/export-button-fermé.PNG" width="45%" alt="button-fermé">
+                    <img src="src/assets/stages/features/export/requete async.PNG" width="45%" alt="async">
+                    <img src="src/assets/stages/features/export/computed-triCustomers.PNG" width="45%"
+                        alt="triCustomers">
+                    <img src="src/assets/stages/features/export/queryset.PNG" width="45%" alt="queryset">
+                    <img src="src/assets/stages/features/export/rendu htmltopdf.PNG" width="45%" alt="htmlToPdf">
+
+                </div>
+                <video controls width="80%" style="margin-left: 10% ;">
+                
+                    <source src="src/assets/stages/export.mp4"
+                            type="video/mp4">
+                
+                    Sorry, your browser doesn't support embedded videos.
+                </video>   
+            </div>
+            <hr>
+            <h3>RAPPORT QUALITÉ</h3>
+
+            <div class="stage-content--img">
+                <img src="src/assets/stages/features/rapport-qualité/check Form.PNG" width="45%" alt="checkForm">
+                <img src="src/assets/stages/features/rapport-qualité/creationQualityReport.PNG" width="45%"
+                    alt="qualityReport">
+                <img src="src/assets/stages/features/rapport-qualité/rendu-final-10-03-22.PNG" width="45%"
+                    alt="rendu-final">
+            </div>
+            <video controls width="80%" style="margin-left: 10% ;">
+                
+                <source src="src/assets/stages/quality.mp4"
+                        type="video/mp4">
+            
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+            <hr>
+
+            <div class="stage-content view">
+                <h2>VIEW RAPPORT QUALITÉ</h2>
+                <div class="stage-content--img">
+                    <img src="src/assets/stages/view-rapport/addTags.png" width="45%" alt="addTags">
+                    <img src="src/assets/stages/view-rapport/categorieAdd.PNG" width="45%" alt="categorie">
+                    <img src="src/assets/stages/view-rapport/filtrer.PNG" width="45%" alt="filtrer">
+                    <img src="src/assets/stages/view-rapport/filtres.PNG" width="45%" alt="filtres">
+                    <img src="src/assets/stages/view-rapport/tableTableur.PNG" width="45%" alt="table">
+                </div>
+            </div>
+
+        </section>
+        <!-- FIN ONGLET STAGE -->
+
+        <!-- ONGLET POURMONCLUB-->
+
+        <section class="tabcontent" id="pourmonclub" style="display: none">
+            <p style="font-size: larger; font-weight:bold;text-align:center;width:60%;margin:auto;">Application créée
+                dans le but de faciliter la gestion des équipes de mon club de tennis de table dans le cadre des
+                Championnats par équipes Senior</p>
+
+            <div class="stage-content--img">
+                <img src="src/assets/pourMonClub/accueil.png" width="45%" alt="">
+                <img src="src/assets/pourMonClub/addJoueur.png" width="45%" alt="">
+                <img src="src/assets/pourMonClub/addRencontre.png" width="45%" alt="">
+                <img src="src/assets/pourMonClub/classes.png" width="45%" alt="">
+                <img src="src/assets/pourMonClub/joueurBrulé.png" width="45%" alt="">
+                <img src="src/assets/pourMonClub/rencontresData.png" width="45%" alt="">
+            </div>
+        </section>
+
+        <!-- FIN ONGLET POURMONCLUB-->
+
+        <!-- ONGLET ALGO-->
+
+        <section class="tabcontent" id="algoritmie" style="display: none">
+            <div style="display: flex; justify-content:start;padding-left:160px;">
+                <img src="https://www.codewars.com/packs/assets/logo.61192cf7.svg" width="50px" alt="">
+                <img src="https://www.codewars.com/users/Le%20Bijecteur/badges/large" alt="">
+            </div>
+            <div class="stage-content--img">
+                <img src="src/assets/algorithmie/codewars.png" width="80%" alt="">
+                <img src="src/assets/algorithmie/32 to 64.png" width="45%" alt="">
+                <img src="src/assets/algorithmie/pinsEspion.png" width="45%" alt="">
+            </div>
+        </section>
+
+        <!-- FIN ONGLET ALGO-->
+
+        <!-- ONGLET VEILLE-->
+
+        <section class="tabcontent" id="veille" style="display: none">
+            <h2> YOUTUBE </h2>
+            <div class="veille-yt-img"
+                style="display:flex;justify-content:space-around;align-items:center;">
+                <img src="src/assets/veille/cookieConnecté.png" width="300px" alt="">
+                <img src="src/assets/veille/fireShip.png" width="300px" alt="">
+                <img src="src/assets/veille/underscore.png" width="300px" alt="">
+            </div>
+            <img src="src/assets/veille/playlistVeille.png" width="80%"  style="margin-bottom: 15px; margin-left: 10%; border: solid black 2px; border-radius: 8px;" alt="">
+
+            <h2> DOCUMENTATION/DEBUG</h2>
+            <div class="" style="display:flex;justify-content:space-around;align-items:center;margin-bottom: 15px;">
+                <a href="https://stackoverflow.com/" target="_blank"><img src="src/assets/veille/stackOverflow.jpg" width="150px" alt=""></a>
+                <a href="https://developer.mozilla.org/fr/" target="_blank"><img src="https://imgs.search.brave.com/ilcjK7v1Ax2Lu7KH1p4YrL0kgnhTI-yGtqLlB-DHSsw/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2EzZDA1YmEz/N2E0NWUwMzEyMjg2/NjY1Y2ZmMTNkYWM1/MDdjZjhjMGI5MGZh/NDRhMTFkYmM3ODE2/NDUwODY1MS9kZXZl/bG9wZXIubW96aWxs/YS5vcmcv" width="150px" alt=""></a>
+                <a href="https://www.w3schools.com/" target="_blank"><img src="src/assets/veille/w3school.jpg" width="150px" alt=""></a>
+
+                <a href="https://vuejs.org/" target="_blank"><img src="src/assets/veille/vue-3.png" width="150px" alt=""></a>
+                <a href="https://docs.djangoproject.com/en/4.0/" target="_blank"><img src="src/assets/veille/Python-y-django.jpg" width="150px" alt=""></a>
+            </div>
+
+            <h2>APPRENTISSAGE</h2>
+            <div class="stage-content--img">
+                <img src="src/assets/veille/openClassrooms.png" width="45%" alt=""></a>
+                <img src="src/assets/veille/soloLearn.png" width="45%" alt=""></a>
+            </div>
+
+        </section>
+
+        <!-- FIN ONGLET VEILLE-->
+
+        <!-- ONGLET APRES-->
+
+        <section class="tabcontent" id="apres" style="display: none">
+            <div style="display: flex; justify-content:center;align-items:center;">
+                <img src="https://imgs.search.brave.com/SLuHca56KkhwPMgK003mqIL5RdqO9bDFU3izMP4B28c/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL3Byb2Qt/cGhvZW5peC1idWNr/ZXQvb3NwL2NhcmRz/LzEzMTQvbG9nby0y/MjAyMTQxMTMyMTgu/cG5n" width="300px" alt="">
+                <p style="font-weight: bold;">Actuellement admissible à <a href="https://www.supdevinci.fr/" target="_blank">SupdeVinci Rennes</a>, je recherche activement une alternance dans le développement informatique!</p>
+            </div>
+            <img src="" alt="">
+            
+        </section>
+
+        <!-- ONGLET APRES-->
+    </div>
+
+
+
+
+
+
+    <script>
+        function openTab(evt, dataTable) {
+            /* voir admin.php */
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(dataTable).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
+</html>
